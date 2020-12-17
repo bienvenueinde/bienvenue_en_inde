@@ -1,0 +1,187 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+} 
+
+nav 
+{
+	background: rgb(0,0,0,0.7);
+}
+
+nav:after
+{
+	content: ' ';
+	clear: both;
+	display: table;
+}
+
+nav ul
+{
+	float: right;
+	list-style: none;
+	margin-right: 40px;
+	position: relative;
+	font-family: 'Niramit', sans-serif;
+}
+
+nav ul li 
+{
+	float: left;
+	display: inline-block;
+	margin: 0 5px;
+}
+
+nav ul li a
+{
+	color: white;
+	text-decoration: none;
+	line-height: 70px;
+	font-size: 18px;
+	padding: 8px 15px;
+}
+
+nav ul ul
+{
+	position: absolute;
+	top: 90px;
+	opacity: 0;
+	visibility: hidden;
+	transition: top .3s;
+	border-top: 3px solid #7100AA;
+}
+
+nav ul ul li
+{
+	position: relative;
+	margin: 0px;
+	width: 110px;
+	float: none;
+	display: list-item;
+	border-bottom: 1px solid #7100AA;
+	background: rgb(0,0,0,0.7);
+}
+
+nav .logo
+{
+	float: left;
+	color: white;
+	font-size: 30px;
+	font-weight: 500;
+	line-height: 70px;
+	padding-left: 60px;
+	font-family: 'Nerko One', cursive;
+}
+
+nav ul li a:hover
+{
+	box-shadow: 0 0 5px #4FBADF, 0 0 5px #4FBADF;
+	border-radius: 5px;
+	color: #E711A6;
+}
+
+nav ul li:hover > ul
+{
+	opacity: 1;
+	visibility: visible;
+	top: 70px;
+}
+
+nav ul ul li a
+{
+	line-height: 50px;
+}
+
+nav ul ul li a:hover
+{
+	color: #F2C539;
+	box-shadow: none;
+}
+
+
+
+.card
+{
+	width: auto;
+	height: auto;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 15px 32px;
+	box-sizing: border-box;
+	margin: 10px 15px;
+	border: 2px solid #F2C539;
+	box-shadow:  12px 12px 2px 1px rgba(0, 0, 255, 0.2);	
+	background-color: white;
+}
+
+.liste
+{
+	display: flex;
+	height: 88%;
+	align-items: center;
+	flex-basis: 50%;
+	padding-top: 10px;
+	padding-left: 70px;
+	padding-right: 70px;
+	padding-bottom: 10px;
+	font-family: 'Dosis', sans-serif;
+}
+
+
+p
+{
+	font-size: 18px;
+}
+
+a
+{
+	text-decoration: none;
+	color: black;
+}
+
+ol li
+{
+	font-size: 30px;
+	font-weight: 600;
+	color: #E711A6;
+}
+
+hr
+{
+    border: none;
+    border-top: 3px solid #DC0801 ;
+    color: black;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+    padding-top: 20px;
+}
+
+
+.liste p span a
+{
+	font-size: 15px;
+	font-style: italic;
+	padding-bottom: 15px;
+	color: #7100AA;
+	font-weight: bold;
+}
+
+
+h2
+{
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-size: 50px;
+	font-weight: 900;
+	font-family: 'Dosis', sans-serif;
+	text-shadow: 0 0 0.2em #4FBADF, 0 0 0.2em #4FBADF, 0 0 0.2em #4FBADF;
+	color: white;
+}
+
+body
+{
+	background-color: #ECF0F1;
+}
